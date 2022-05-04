@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./computer.css" media="screen and (min-width: 1200px)">
     <title>Torre de Hanoi</title>
 </head>
 <body>
-    <main class="container-principal">
-        <div class="stick_1"></div>
-        <div class="stick_2"></div>
-        <div class="stick_3"></div>
-        <div class="base"></div>
+    <header>
+        <h1>Hanoi Tower Game</h1>
+    </header>
+    <main id="mainContainer">
+        <p class="mobileMessage"></p>
+        <div class="stick" id="stick_1">
+            <section class="disk d1 p1" draggable="true"></section>
+            <section class="disk d2 p2" draggable="true"></section>
+            <section class="disk d3 p3" draggable="true"></section>
+            <section class="disk d4 p4" draggable="true"></section>  
+        </div>
+        <div class="stick" id="stick_2"></div>
+        <div class="stick" id="stick_3"></div>
+        <div class="base" ></div>
     </main>
+    <section id="stats">
+        <h1>Movements <br> Performed</h1>
+        <h1 id="movements">0</h1>
+    </section>
+    <footer id="footer">
+        Made with love in El Salvador by &copy; Kelvin Rojas 
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>

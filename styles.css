@@ -2,4 +2,37 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(22, 14, 94);
+    font-family: 'Courier New', Courier, monospace;
+}
 
+header{
+    padding: 4rem;
+    text-align: center;
+    color: rgb(252, 229, 22);
+    font-size: 1.5rem;
+}
+
+#mainContainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    margin: 0 200px;
+}
+
+
+.mobileMessage::before{
+    content: "This game is only supported on computers ...";
+    
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+
+}
+
+#footer, #stats{
+    color: rgb(22, 14, 94);
+}
