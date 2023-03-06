@@ -6,28 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./computer.css" media="screen and (min-width: 1200px)">
-    <title>Torre de Hanoi</title>
+    <title>Hanoi Tower</title>
 </head>
 <body>
     <header>
         <h1>Hanoi Tower Game</h1>
     </header>
-    <main id="mainContainer">
+    <main class="mainContainer">
         <p class="mobileMessage"></p>
-        <div class="stick" id="stick_1">
-            <section class="disk d1 p1" draggable="true"></section>
-            <section class="disk d2 p2" draggable="true"></section>
-            <section class="disk d3 p3" draggable="true"></section>
-            <section class="disk d4 p4" draggable="true"></section>  
+        <div class="tower tower1">
+            <section class="disk d1 " draggable="true"></section>
+            <section class="disk d2" draggable="true"></section>
+            <section class="disk d3 " draggable="true"></section>
+            <section class="disk d4 " draggable="true"></section>  
         </div>
-        <div class="stick" id="stick_2"></div>
-        <div class="stick" id="stick_3"></div>
+        <div class="tower tower2"></div>
+        <div class="tower tower3"></div>
         <div class="base" ></div>
     </main>
-    <section id="stats">
-        <h1>Movements <br> Performed</h1>
-        <h1 id="movements">0</h1>
-    </section>
+    <div class="container">
+        <section id="stats">
+            <h1>Movements <br> Performed</h1>
+            <h1 id="movements">0</h1>
+        </section>
+        <section id="steps">
+            <a href="./steps.html" target="_blank"><h3>click here for step-by-step instructions</h3></a>
+        </section>
+    </div>
     <footer id="footer">
         Made with love in El Salvador by &copy; Kelvin Rojas 
     </footer>

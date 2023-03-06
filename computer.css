@@ -15,7 +15,7 @@ header{
     font-size: 1.5rem;
 }
 
-#stats{
+#stats, #steps{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,9 +25,17 @@ header{
     height: 100px;
 
     border-radius: 25px;
-    background-color: rgb(145, 145, 145);
+    
     color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 
+#stats{
+    background-color: rgb(145, 145, 145);
+}
+
+#steps{
+    background-color: rgb(252, 229, 22);
 }
 
 #movements{
@@ -35,7 +43,7 @@ header{
     font-size: 40px;
 }
 
-#mainContainer{
+.mainContainer{
     
     display: flex;
     align-items: center;
@@ -54,20 +62,15 @@ header{
 
 }
 
-.stick{
-    width: 250px;  
-}
-
-.stick::before {
-    content: "";
-    display: block;
-    
-    margin: 3rem auto 0 auto;
-    width: 4rem;
-    height: 23rem;
-
+.tower{
+    width: 250px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 1rem;
+    height: 16rem;
     border-radius: 25px;
-    background-color: rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
 }
 
 
@@ -82,9 +85,9 @@ header{
 }
 
 .disk{
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
-
+    
     margin: 0 auto 0 auto;
     
     height:4rem;
@@ -98,42 +101,22 @@ header{
 }
 
 .d1{
-    width: 250px;
     background-color: rgb(255, 231, 15);
-}
-
-.p1{
-    bottom: calc(100% - 600px);
 }
 
 .d2{
     margin-left: 25px;
-    width: 200px;
     background-color: rgb(255, 239, 91);
-}
-
-.p2{
-    bottom: calc(100% - 536px);
 }
 
 .d3{
     margin-left: 50px;
-    width: 150px;
     background-color: rgb(255, 244, 147);
-}
-
-.p3{
-    bottom: calc(100% - 473px);
 }
 
 .d4{
     margin-left: 75px;
-    width: 100px;
     background-color: rgb(255, 249, 197);
-}
-
-.p4{
-    bottom: calc(100% - 412px);
 }
 
 #footer{
@@ -147,4 +130,24 @@ header{
     height: 80px;
     background-color: rgb(255, 255, 255);
 
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(22, 14, 94);
+    display: flex;
+    padding: 0 2rem;
+
+}
+
+#guide p {
+    margin: 0.5rem;
+    color: #fff;
 }
